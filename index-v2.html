@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="concreto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodrigo Rocha Design - Portfólio V2 Estilo Arado">
+    <title>Rodrigo Rocha Design — Estúdio & Portfólio</title>
+    
+    <!-- Fontes: Outfit (base) e Instrument Serif (display/acento) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style-v2.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="barra-fixa">
+        <div class="env barra">
+            <a href="#" class="marca-topo">
+                <img src="Identidade/logo RODRIGO.jpg" alt="RR Design" class="logo-menor">
+            </a>
+            
+            <nav>
+                <ul class="menu">
+                    <li><a href="#mesa">Estúdio</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#sobre">Perfil</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Trocador de Cor (Tinta/Tema) -->
+            <div class="seletor-temas">
+                <button aria-label="Tema Concreto" class="tema-btn" data-set-tema="concreto"></button>
+                <button aria-label="Tema Madeira" class="tema-btn" data-set-tema="madeira"></button>
+                <button aria-label="Tema Kraft" class="tema-btn" data-set-tema="kraft"></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- A MESA DE PROJETOS (Hero estilo colagem Arado) -->
+        <section id="mesa" class="mesa-trabalho entintado">
+            <!-- Tipografia esparramada no fundo -->
+            <h1 class="titulao-fundo">
+                RODRIGO ROCHA <span class="serifa-italica">DESIGN</span>
+            </h1>
+
+            <p class="frase-solta f1">Memória afetiva como inspiração.</p>
+            <p class="frase-solta f2">Design de Mobiliário e Identidade.</p>
+
+            <!-- Peças da mesa (colagem absolute) -->
+            <!-- Peça 1: Produto -->
+            <div class="peca p1 foto">
+                <div class="quadro-foto">
+                    <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=600&auto=format&fit=crop" alt="Produto">
+                </div>
+                <div class="peca-legenda">Mobiliário Residencial</div>
+            </div>
+
+            <!-- Peça 2: Gráfico -->
+            <div class="peca p2 foto atras">
+                <div class="quadro-foto">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" alt="Gráfico">
+                </div>
+                <div class="peca-legenda">Comunicação Visual</div>
+            </div>
+
+            <!-- Peça 3: Identidade (Destacada) -->
+            <div class="peca p3 foto frente">
+                <div class="quadro-foto">
+                    <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=600&auto=format&fit=crop" alt="Identidade">
+                </div>
+                <div class="peca-legenda">Branding Corporativo</div>
+            </div>
+            
+            <div class="peca-texto t1">
+                <span>✦</span> PROJETOS SELECIONADOS
+            </div>
+        </section>
+
+        <!-- ESTEIRA DE SERVIÇOS (Marquee) -->
+        <section class="esteira-servicos papel">
+            <div class="esteira-wrapper">
+                <ul class="trilha-servicos">
+                    <li>IDENTIDADE VISUAL</li>
+                    <li>✦</li>
+                    <li>PROJETO DE PRODUTO</li>
+                    <li>✦</li>
+                    <li>DESIGN GRÁFICO</li>
+                    <li>✦</li>
+                    <li>BRANDING</li>
+                    <li>✦</li>
+                    <!-- Repetição para o infinito -->
+                    <li>IDENTIDADE VISUAL</li>
+                    <li>✦</li>
+                    <li>PROJETO DE PRODUTO</li>
+                    <li>✦</li>
+                    <li>DESIGN GRÁFICO</li>
+                    <li>✦</li>
+                    <li>BRANDING</li>
+                    <li>✦</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJETOS LISTA CLÁSSICA MAS ELEGANTE -->
+        <section id="projetos" class="secao-projetos papel">
+            <div class="env">
+                <h2 class="titulo-secao">Projetos em <span class="serifa-italica">Arquivo</span></h2>
+                
+                <div class="grade-projetos">
+                    <article class="card-projeto">
+                        <div class="card-img"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop" alt=""></div>
+                        <div class="card-info">
+                            <span class="dado">IDENTIDADE</span>
+                            <h3>Renovação de Marca</h3>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto">
+                        <div class="card-img"><img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600&auto=format&fit=crop" alt=""></div>
+                        <div class="card-info">
+                            <span class="dado">PRODUTO</span>
+                            <h3>Design Corporativo</h3>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto">
+                        <div class="card-img"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=600&auto=format&fit=crop" alt=""></div>
+                        <div class="card-info">
+                            <span class="dado">GRÁFICO</span>
+                            <h3>Catálogo e Editorial</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE (Estilo GENTE no Arado) -->
+        <section id="sobre" class="secao-perfil entintado">
+            <div class="env">
+                <div class="perfil-grid">
+                    <div class="perfil-txt">
+                        <h2 class="titulo-secao">A mente por <span class="serifa-italica">Trás</span></h2>
+                        <p class="lede">Rodrigo Rocha, designer de produtos radicado em São Paulo, focando no bem-estar e na estética funcional desde 2011.</p>
+                        <p>O foco de seu estúdio não é apenas produzir formas, mas resgatar e projetar a <strong>memória afetiva</strong> em produtos e identidades que conectam pessoas de forma profunda.</p>
+                        
+                        <ul class="lista-academica">
+                            <li><span class="dado">2010</span> Graduação em Design de Produtos (UNESP/FAAC)</li>
+                            <li><span class="dado">2015</span> MBA em Marketing (Fundação Getúlio Vargas)</li>
+                            <li><span class="dado">2017</span> Mestrado em Design (UNESP/FAAC)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="perfil-foto">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Rodrigo Rocha">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ FIXO DE CONTATO (Metáfora de assinatura) -->
+    <footer class="rodape breu">
+        <div class="env rodape-grid">
+            <div class="rodape-marca">
+                <h3>RODRIGO ROCHA DESIGN</h3>
+                <p>Construindo marcas e produtos reais.</p>
+            </div>
+            
+            <div class="rodape-contato">
+                <a href="mailto:rodrigorochadsgn@gmail.com" class="link-dado">rodrigorochadsgn@gmail.com</a>
+                <a href="https://wa.me/5514982147669" target="_blank" class="link-dado zap-link">
+                    WhatsApp: (14) 98214-7669
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Fixo WhatsApp Estilo Selo -->
+    <a href="https://wa.me/5514982147669" target="_blank" class="zap-fixo" title="Falar no WhatsApp">
+        <img src="Identidade/Whatsapp1.png" alt="Zap">
+    </a>
+
+    <script src="js/main-v2.js"></script>
+</body>
+</html>
