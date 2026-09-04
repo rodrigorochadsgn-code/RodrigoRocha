@@ -529,13 +529,18 @@
                 <!-- Formulário de Mensagem Direta -->
                 <div class="footer-form-col">
                     <h3>Fale Diretamente Comigo</h3>
-                    <form class="footer-form"
-                        onsubmit="event.preventDefault(); alert('Obrigado pelo contato! Rodrigo responderá em breve.');">
-                        <input type="text" class="form-field" placeholder="Seu Nome" required>
-                        <input type="email" class="form-field" placeholder="Seu E-mail" required>
-                        <textarea class="form-field" rows="3"
+                    <form class="footer-form" id="contact-form" action="https://formsubmit.co/rodrigorochadsgn@gmail.com" method="POST">
+                        <!-- Configurações FormSubmit -->
+                        <input type="hidden" name="_subject" value="Novo Contato pelo Site — Rodrigo Rocha Design">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <input type="text" name="Nome" class="form-field" placeholder="Seu Nome" required>
+                        <input type="email" name="Email" class="form-field" placeholder="Seu E-mail" required>
+                        <textarea name="Mensagem" class="form-field" rows="3"
                             placeholder="Descreva brevemente o projeto que deseja realizar..." required></textarea>
-                        <button type="submit" class="btn-submit-v4">Enviar Mensagem</button>
+                        <button type="submit" class="btn-submit-v4" id="btn-submit-contact">Enviar Mensagem</button>
+                        <div class="form-status-msg" id="form-status-msg" style="display: none; margin-top: 12px; font-size: 0.85rem; padding: 10px 14px; border-radius: 2px;"></div>
                     </form>
                 </div>
             </div>

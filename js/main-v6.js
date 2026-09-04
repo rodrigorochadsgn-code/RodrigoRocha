@@ -500,4 +500,55 @@ document.addEventListener('DOMContentLoaded', () => {
             loadMoreBtn.style.color = '#111111';
         });
     }
+
+    // Formulário de Contato Direto (rodrigorochadsgn@gmail.com)
+    const contactForm = document.getElementById('contact-form') || document.querySelector('.footer-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const statusMsg = document.getElementById('form-status-msg');
+            const originalBtnText = submitBtn ? submitBtn.textContent : 'Enviar Mensagem';
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+            }
+
+            try {
+                const formData = new FormData(contactForm);
+                const response = await fetch('https://formsubmit.co/ajax/rodrigorochadsgn@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                });
+
+                if (response.ok) {
+                    contactForm.reset();
+                    if (statusMsg) {
+                        statusMsg.style.display = 'block';
+                        statusMsg.style.backgroundColor = 'rgba(74, 222, 128, 0.12)';
+                        statusMsg.style.color = '#4ade80';
+                        statusMsg.style.border = '1px solid rgba(74, 222, 128, 0.4)';
+                        statusMsg.textContent = '✓ Mensagem enviada com sucesso! Rodrigo responderá em breve.';
+                    } else {
+                        alert('Mensagem enviada com sucesso! Rodrigo responderá em breve.');
+                    }
+                } else {
+                    throw new Error('Falha no envio via AJAX.');
+                }
+            } catch (err) {
+                // Fallback seguro: submete o formulário normalmente para o endpoint do FormSubmit
+                contactForm.submit();
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                }
+            }
+        });
+    }
 });
+
