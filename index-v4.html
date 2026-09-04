@@ -15,7 +15,7 @@
         rel="stylesheet">
 
     <!-- Estilos v4 Parallax -->
-    <link rel="stylesheet" href="css/style-v5.css">
+    <link rel="stylesheet" href="css/style-v4.css">
 </head>
 
 <body>
@@ -54,47 +54,42 @@
 
     <main>
         <!-- ==========================================
-             HERO SECTION V5 — EDITORIAL SPLIT-FRAME (GFX TUTORIALS)
+             HERO SECTION COM SISTEMA DE CAMADAS PARALLAX 3D
              ========================================== -->
-        <section id="inicio" class="hero-v5">
-            <!-- Camada de Fundo Preto e Branco com Foto Rodrigo Rocha -->
-            <div class="hero-v5-bg-layer" aria-hidden="true"></div>
+        <section id="inicio" class="hero-v4">
+            <div class="container hero-split-grid">
+                <!-- Coluna Esquerda: Tipografia e Destaques -->
+                <div class="hero-left-content">
+                    <div class="dot-grid hero-dot-grid" aria-hidden="true"></div>
 
-            <div class="container hero-v5-container">
-                <!-- Coluna Editorial (Tipografia e Apresentação) -->
-                <div class="hero-v5-content">
-                    <div class="hero-v5-badge-top">
-                        <span class="hero-v5-badge-dot"></span>
-                        <span>Design Gráfico • Mobiliário • Branding</span>
-                    </div>
+                    <h1 class="hero-main-title">Oi, somos a<br>Rodrigo Rocha Design.</h1>
 
-                    <h1 class="hero-v5-title">
-                        RODRIGO<br><span>ROCHA</span>
-                    </h1>
+                    <!-- Tarja Amarela da Identidade -->
+                    <div class="hero-yellow-badge">DESIGNER DE PRODUTO & IDENTIDADE</div>
 
-                    <p class="hero-v5-manifesto-lead">
-                        Sou <strong>designer gráfico e de produtos brasileiro</strong> (Guarulhos-SP, 1982), atuando no desenvolvimento conceitual e produtivo de <strong>mobiliário corporativo e residencial</strong>, além de estratégias completas de <strong>identidade visual e branding</strong>.
+                    <p class="hero-subdesc">
+                        Transformando a memória afetiva em produtos e marcas sólidas que inspiram confiança e promovem o
+                        bem-estar nas relações humanas.
                     </p>
 
-                    <p class="hero-v5-subtext">
-                        Meu trabalho parte do princípio de que o design não é mero adorno estético: é uma ferramenta potente capaz de resgatar memórias afetivas, enriquecer o cotidiano das pessoas e posicionar empresas de maneira memorável.
-                    </p>
-
-                    <div class="hero-v5-actions">
-                        <a href="#portfolio" class="btn-hero-v5-primary">
-                            Explorar Portfólio ↓
-                        </a>
-                        <a href="#contato" class="btn-hero-v5-secondary">
-                            Iniciar Conversa ↗
+                    <div class="hero-cta-group">
+                        <a href="#portfolio" class="btn-pill-yellow">Ver Portfólio</a>
+                        <a href="https://wa.me/5514982147669" target="_blank" class="btn-pill-dark">
+                            <img src="Identidade/whatsapp.svg" alt="WhatsApp" class="btn-icon-svg"> Falar Comigo
                         </a>
                     </div>
                 </div>
 
-                <!-- Coluna Visual com a Moldura Retangular Editorial (Estilo GFX Tutorials) -->
-                <div class="hero-v5-visual-wrapper">
-                    <span class="hero-v5-created-tag">Created by <strong>Rodrigo Rocha Design</strong></span>
-                    <div class="hero-v5-frame">
-                        <img src="Identidade/RodrigoRocha-frame-color.jpg" alt="Rodrigo Rocha - Designer Gráfico e de Produto">
+                <!-- Coluna Direita: Logo Oficial RRDesgin com Parallax 3D -->
+                <div class="hero-parallax-stage">
+                    <div class="parallax-hero-brand-card" id="hero-tilt-card">
+                        <picture>
+                            <source srcset="Identidade/RRDesgin.gif" type="image/avif">
+                            <img src="Identidade/RRDesgin.gif"
+                                onerror="this.onerror=null; this.src='Identidade/RRDesgin.png';"
+                                alt="Rodrigo Rocha Design" class="hero-brand-main-img">
+                        </picture>
+                        <div class="hero-brand-glare" aria-hidden="true"></div>
                     </div>
                 </div>
             </div>
@@ -564,9 +559,9 @@
                     <span>•</span>
                     <a href="index-v3.html">V3 Editorial</a>
                     <span>•</span>
-                    <a href="index-v4.html">V4 Parallax</a>
+                    <a href="index-v4.html" style="color: var(--cor-destaque); font-weight: 800;">V4 Parallax Layers</a>
                     <span>•</span>
-                    <a href="index-v5.html" style="color: var(--cor-destaque); font-weight: 800;">V5 Editorial Frame</a>
+                    <a href="index-v5.html">V5 Editorial Frame</a>
                     <span>•</span>
                     <a href="#inicio" style="color: var(--cor-destaque);">Topo ↑</a>
                 </div>
@@ -608,7 +603,7 @@
     </div>
 
     <!-- Scripts v4 Parallax -->
-    <script src="js/main-v5.js"></script>
+    <script src="js/main-v4.js"></script>
 </body>
 
 </html>

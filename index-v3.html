@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodrigo Rocha Design — Estúdio de Design de Produto, Identidade Visual e Branding. Memória afetiva como inspiração.">
+    <title>Rodrigo Rocha Design — Portfólio v3</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos v3 -->
+    <link rel="stylesheet" href="css/style-v3.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO / NAVBAR FIXA COM LOGO OFICIAL
+         ========================================== -->
+    <header class="header-v3">
+        <div class="container header-inner">
+            <a href="#inicio" class="brand-link" title="Rodrigo Rocha Design">
+                <picture>
+                    <source srcset="Identidade/RRDesgin.gif" type="image/avif">
+                    <img src="Identidade/RRDesgin.gif" onerror="this.onerror=null; this.src='Identidade/RRDesgin.png';" alt="Rodrigo Rocha Design" class="brand-logo-img">
+                </picture>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#portfolio" class="nav-link">Projetos</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             HERO SECTION (SPLIT SCREEN FIEL AO MODELO)
+             ========================================== -->
+        <section id="inicio" class="hero-v3">
+            <div class="container hero-split-grid">
+                <!-- Coluna Esquerda: Tipografia e Destaque Amarelo -->
+                <div class="hero-left-content">
+                    <div class="dot-grid hero-dot-grid" aria-hidden="true"></div>
+                    
+                    <h1 class="hero-main-title">Oi, somos a<br>Rodrigo Rocha Design.</h1>
+                    
+                    <!-- Tarja Amarela da Referência Visual -->
+                    <div class="hero-yellow-badge">DESIGNER DE PRODUTO & IDENTIDADE</div>
+                    
+                    <p class="hero-subdesc">
+                        Transformando a memória afetiva em produtos e marcas sólidas que inspiram confiança e promovem o bem-estar nas relações humanas.
+                    </p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#portfolio" class="btn-pill-yellow">Ver Portfólio</a>
+                        <a href="https://wa.me/5514982147669" target="_blank" class="btn-pill-dark">
+                            <img src="Identidade/whatsapp.svg" alt="WhatsApp" class="btn-icon-svg"> Falar Comigo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Foto Editorial Preto e Branco -->
+                <div class="hero-right-visual">
+                    <div class="hero-photo-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Rodrigo Rocha Designer" class="hero-main-photo">
+                        <div class="hero-photo-overlay" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SEÇÃO SOBRE (QUEM SOU EU / HELLO)
+             ========================================== -->
+        <section id="sobre" class="about-v3">
+            <div class="container about-grid">
+                <!-- Coluna Esquerda: Moldura Deslocada e Acentos Geométricos -->
+                <div class="about-visual-comp">
+                    <div class="about-backdrop-frame" aria-hidden="true"></div>
+                    
+                    <!-- Círculo Concêntrico Amarelo -->
+                    <div class="about-target-badge">
+                        <span class="target-accent"></span>
+                    </div>
+                    
+                    <div class="about-photo-card">
+                        <img src="Identidade/rodrigo-rocha-pb.jpg" alt="Rodrigo Rocha Designer" class="about-photo">
+                    </div>
+                    
+                    <div class="dot-grid dark-dots about-dot-pattern" aria-hidden="true"></div>
+                </div>
+
+                <!-- Coluna Direita: Conteúdo Editorial -->
+                <div class="about-text-content">
+                    <span class="about-subtitle">quem sou eu</span>
+                    
+                    <div class="about-title-row">
+                        <h2 class="about-main-heading">OLÁ.</h2>
+                        
+                        <!-- Elemento Gráfico de Ondas Zigue-zague SVG -->
+                        <svg class="zigzag-wave" viewBox="0 0 90 24" aria-hidden="true">
+                            <path d="M 2 12 L 12 4 L 22 20 L 32 4 L 42 20 L 52 4 L 62 20 L 72 4 L 82 20 L 88 12" />
+                        </svg>
+                    </div>
+
+                    <div class="about-paragraphs">
+                        <p>
+                            Sou designer gráfico e de produtos brasileiro (Guarulhos-SP, 1982), atuando no desenvolvimento conceitual e produtivo de mobiliário corporativo e residencial, além de estratégias completas de identidade visual e branding.
+                        </p>
+                        <p>
+                            Meu trabalho parte do princípio de que o design não é mero adorno estético: é uma ferramenta potente capaz de resgatar memórias afetivas, enriquecer o cotidiano das pessoas e posicionar empresas de maneira memorável.
+                        </p>
+                    </div>
+
+                    <!-- Credenciais Acadêmicas -->
+                    <div class="about-credentials">
+                        <div class="cred-item">
+                            <span class="cred-year">2010</span>
+                            <span class="cred-desc">Design de Produtos<br>UNESP / FAAC</span>
+                        </div>
+                        <div class="cred-item">
+                            <span class="cred-year">2015</span>
+                            <span class="cred-desc">MBA em Marketing<br>Fundação Getúlio Vargas</span>
+                        </div>
+                        <div class="cred-item">
+                            <span class="cred-year">2017</span>
+                            <span class="cred-desc">Mestrado em Design<br>UNESP / FAAC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SEÇÃO PORTFÓLIO (MY WORK / AWESOME PROJECTS)
+             ========================================== -->
+        <section id="portfolio" class="portfolio-v3">
+            <div class="container">
+                <!-- Cabeçalho do Portfólio com Acentos da Referência -->
+                <div class="portfolio-header-area">
+                    <div class="dot-grid dark-dots portfolio-dots-top-right" aria-hidden="true"></div>
+                    
+                    <div class="portfolio-title-wrapper">
+                        <h2 class="portfolio-title">MEU TRABALHO</h2>
+                        <span class="target-accent"></span>
+                    </div>
+                    
+                    <span class="portfolio-subline"><span>projetos selecionados</span></span>
+
+                    <!-- Filtros de Categorias com Traço Amarelo Ativo -->
+                    <div class="portfolio-filters-v3">
+                        <button class="filter-btn-v3 active" data-filter="all">TODOS</button>
+                        <button class="filter-btn-v3" data-filter="identidade">IDENTIDADE</button>
+                        <button class="filter-btn-v3" data-filter="produto">PRODUTO</button>
+                        <button class="filter-btn-v3" data-filter="grafico">GRÁFICO</button>
+                        <button class="filter-btn-v3" data-filter="branding">BRANDING</button>
+                        <button class="filter-btn-v3" data-filter="webdesign">WEBDESIGN</button>
+                    </div>
+                </div>
+
+                <!-- Grid Fiel ao Modelo Visual -->
+                <div class="portfolio-grid-v3">
+                    <!-- Item 1: Identidade Visual / Lá de Passos (Vinculado ao Instagram) -->
+                    <a href="https://www.instagram.com/la.depassos/" target="_blank" rel="noopener noreferrer"
+                        class="project-card-v3 card-preserve-colors" data-category="identidade"
+                        data-desc="Sistema de identidade visual autoral e branding completo para Lá de Passos. Clique para visitar o perfil no Instagram.">
+                        <img src="Clientes/LaDePassos.jpg" alt="Lá de Passos - Identidade Visual">
+                        <div class="project-overlay-info">
+                            <span class="project-tag">IDENTIDADE</span>
+                            <h3 class="project-title">Lá de Passos</h3>
+                            <span class="insta-sub-link">
+                                <svg class="insta-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                                @la.depassos ↗
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Catálogos Editoriais / Gráfico (Instagram D'Arco & Botica Dermo) -->
+                    <div class="project-card-v3 card-white-bg card-preserve-colors" data-category="grafico"
+                        data-desc="Design gráfico editorial e criação de catálogos comerciais desenvolvidos para Botica Dermo e D'Arco Cosméticos.">
+                        
+                        <!-- Zonas de clique direto sobre cada catálogo -->
+                        <div class="dual-click-areas">
+                            <a href="https://www.instagram.com/darcoprofessional/" target="_blank" rel="noopener noreferrer" class="dual-click-area" title="Instagram D'Arco (@darcoprofessional)"></a>
+                            <a href="https://www.instagram.com/boticadermo/" target="_blank" rel="noopener noreferrer" class="dual-click-area" title="Instagram Botica Dermo (@boticadermo)"></a>
+                        </div>
+
+                        <img src="Clientes/image.png" alt="Catálogos Editoriais D'Arco & Botica Dermo">
+
+                        <div class="project-overlay-info">
+                            <span class="project-tag">GRÁFICO</span>
+                            <h3 class="project-title">Catálogos Editoriais</h3>
+                            <div class="dual-insta-links">
+                                <a href="https://www.instagram.com/darcoprofessional/" target="_blank" rel="noopener noreferrer" class="insta-pill-link" title="Instagram D'Arco">
+                                    <svg class="insta-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                    <span>D'Arco <strong>@darcoprofessional</strong> ↗</span>
+                                </a>
+                                <a href="https://www.instagram.com/boticadermo/" target="_blank" rel="noopener noreferrer" class="insta-pill-link" title="Instagram Botica Dermo">
+                                    <svg class="insta-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                    <span>Botica Dermo <strong>@boticadermo</strong> ↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Perspectiva Urbana / Branding -->
+                    <div class="project-card-v3" data-category="branding"
+                        data-desc="Reposicionamento estratégico de marca e materiais institucionais para o segmento imobiliário.">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop"
+                            alt="Ambiente Corporativo">
+                        <div class="project-overlay-info">
+                            <span class="project-tag">BRANDING</span>
+                            <h3 class="project-title">Sede Horizonte</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 (Alongado - Span 2): Website Institucional / Webdesign -->
+                    <div class="project-card-v3 card-col-span-2 card-preserve-colors" data-category="webdesign"
+                        data-desc="Design de interface, experiência do usuário e desenvolvimento web institucional para o escritório de advocacia Dra. Paula Moraes.">
+                        <img src="Clientes/DraPaulaMoraes-horizontal.png" alt="Website Dra. Paula Moraes - Advocacia">
+                        <div class="project-overlay-info">
+                            <span class="project-tag">WEBDESIGN</span>
+                            <h3 class="project-title">Dra. Paula Moraes Advocacia</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: CARD DE DESTAQUE AMARELO (Permanece no Mesmo Local) -->
+                    <div class="project-card-v3 featured-yellow-card" data-category="produto">
+                        <div class="search-icon-circle">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                        <h3>DESIGN PROJECT</h3>
+                        <p>Linha de Mobiliário Corporativo. Clique para explorar os detalhes deste case.</p>
+                    </div>
+
+                    <!-- Item 7: Estrutura / Identidade -->
+                    <div class="project-card-v3" data-category="identidade" data-desc="Criação de marcas para startups e ecossistemas de inovação tecnológica.">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop" alt="Conceito Visual">
+                        <div class="project-overlay-info">
+                            <span class="project-tag">IDENTIDADE</span>
+                            <h3 class="project-title">Marca Apex</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Branding Oficial / D'Arco Cosméticos -->
+                    <div class="project-card-v3 card-preserve-colors" data-category="branding"
+                        data-desc="Estratégia de branding, posicionamento e design de identidade para a D'Arco Cosméticos. Soluções de alto desempenho por meio de pesquisa, tecnologia e sensibilidade para profissionais da beleza e bem-estar.">
+                        <img src="Clientes/darco-logo.jpg" alt="D'Arco Cosméticos - Branding Oficial">
+                        <div class="project-overlay-info">
+                            <span class="project-tag">BRANDING</span>
+                            <h3 class="project-title">D'Arco Cosméticos</h3>
+                            <div class="dual-insta-links">
+                                <a href="https://darco.ind.br/quem-somos/" target="_blank" rel="noopener noreferrer" class="insta-pill-link" title="Site Oficial D'Arco">
+                                    <svg class="insta-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                    <span>Site Oficial <strong>darco.ind.br</strong> ↗</span>
+                                </a>
+                                <a href="https://www.instagram.com/darcoprofessional/" target="_blank" rel="noopener noreferrer" class="insta-pill-link" title="Instagram D'Arco">
+                                    <svg class="insta-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                    <span>Instagram <strong>@darcoprofessional</strong> ↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Atmosfera e Texturas / Produto -->
+                    <div class="project-card-v3" data-category="produto" data-desc="Mesa executiva modular com passagem interna para fiação e acabamento em carvalho natural.">
+                        <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600&auto=format&fit=crop" alt="Mobiliário Corporativo">
+                        <div class="project-overlay-info">
+                            <span class="project-tag">PRODUTO</span>
+                            <h3 class="project-title">Mesa Modular Verso</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Centralizado Pill Preto -->
+                <div class="portfolio-actions">
+                    <button class="btn-load-more">CARREGAR MAIS</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SEÇÃO SERVIÇOS (EIXOS DE ATUAÇÃO)
+             ========================================== -->
+        <section id="servicos" class="services-v3">
+            <div class="container">
+                <div class="portfolio-header-area" style="margin-bottom: 20px;">
+                    <div class="portfolio-title-wrapper">
+                        <h2 class="portfolio-title">EIXOS DE ATUAÇÃO</h2>
+                    </div>
+                    <span class="portfolio-subline"><span>soluções do conceito à manufatura</span></span>
+                </div>
+
+                <div class="services-grid-v3">
+                    <div class="service-card-v3">
+                        <div class="service-icon-box">✦</div>
+                        <h3>Identidade Visual & Branding</h3>
+                        <p>Desenvolvimento de logotipos, manuais de aplicação, tipografia personalizada e diretrizes estratégicas para fortalecer o posicionamento da sua empresa.</p>
+                    </div>
+
+                    <div class="service-card-v3">
+                        <div class="service-icon-box">●</div>
+                        <h3>Projeto de Produto</h3>
+                        <p>Criação autoral de mobiliário, estofados e peças de design do sketch à prototipagem, priorizando ergonomia, elegância e viabilidade fabril.</p>
+                    </div>
+
+                    <div class="service-card-v3">
+                        <div class="service-icon-box">▲</div>
+                        <h3>Design Gráfico & Editorial</h3>
+                        <p>Catálogos técnicos, apresentações corporativas, embalagens e sinalização que traduzem valor e comunicam sua proposta de forma clara.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         RODAPÉ & CONTATO COM LOGO OFICIAL E WHATSAPP
+         ========================================== -->
+    <footer id="contato" class="footer-v3">
+        <div class="container">
+            <div class="footer-top-grid">
+                <!-- Informações e Canais de Contato -->
+                <div class="footer-brand-col">
+                    <picture>
+                        <source srcset="Identidade/RRDesgin.gif" type="image/avif">
+                        <img src="Identidade/RRDesgin.gif" onerror="this.onerror=null; this.src='Identidade/RRDesgin.png';" alt="Rodrigo Rocha Design" class="footer-brand-logo">
+                    </picture>
+                    <p>
+                        Pronto para elevar o padrão visual da sua marca ou desenvolver um novo produto memorável? Entre em contato e vamos conversar.
+                    </p>
+
+                    <div class="footer-contact-actions">
+                        <a href="mailto:rodrigorochadsgn@gmail.com" class="contact-action-item">
+                            <span>✉</span> rodrigorochadsgn@gmail.com
+                        </a>
+                        <a href="https://wa.me/5514982147669" target="_blank" class="contact-action-item contact-whatsapp-item">
+                            <img src="Identidade/whatsapp.svg" alt="WhatsApp Oficial" class="contact-icon-svg"> WhatsApp: (14) 98214-7669
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulário de Mensagem Direta -->
+                <div class="footer-form-col">
+                    <h3>Fale Diretamente Comigo</h3>
+                    <form class="footer-form" onsubmit="event.preventDefault(); alert('Obrigado pelo contato! Rodrigo responderá em breve.');">
+                        <input type="text" class="form-field" placeholder="Seu Nome" required>
+                        <input type="email" class="form-field" placeholder="Seu E-mail" required>
+                        <textarea class="form-field" rows="3" placeholder="Descreva brevemente o projeto que deseja realizar..." required></textarea>
+                        <button type="submit" class="btn-submit-v3">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Rodrigo Rocha Design. Todos os direitos reservados.</p>
+                <div class="footer-social-links">
+                    <a href="index.html">V1 Original</a>
+                    <span>•</span>
+                    <a href="index-v2.html">V2 Arado</a>
+                    <span>•</span>
+                    <a href="index-v3.html" style="color: var(--cor-destaque); font-weight: 800;">V3 Editorial</a>
+                    <span>•</span>
+                    <a href="index-v4.html">V4 Parallax 3D</a>
+                    <span>•</span>
+                    <a href="#inicio" style="color: var(--cor-destaque);">Topo ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BOTÃO FLUTUANTE COM LOGO ORIGINAL DO WHATSAPP
+         ========================================== -->
+    <a href="https://wa.me/5514982147669" target="_blank" class="whatsapp-floating-btn" title="Conversar no WhatsApp">
+        <img src="Identidade/whatsapp.svg" alt="WhatsApp Oficial" class="whatsapp-svg-icon">
+    </a>
+
+    <!-- ==========================================
+         MODAL / LIGHTBOX DE PROJETO
+         ========================================== -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="modal-content-box">
+            <button id="modal-close" class="modal-close-btn" aria-label="Fechar Modal">&times;</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt="Projeto">
+            </div>
+            <div class="modal-body">
+                <div id="modal-tag" class="modal-tag">CATEGORIA</div>
+                <h3 id="modal-title" class="modal-title">Título do Projeto</h3>
+                <p id="modal-desc" class="modal-desc">Descrição detalhada do projeto.</p>
+                <a href="https://wa.me/5514982147669" target="_blank" class="modal-zap-btn">
+                    <img src="Identidade/whatsapp.svg" alt="WhatsApp Oficial" class="modal-zap-svg"> Discutir Projeto Semelhante
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts v3 -->
+    <script src="js/main-v3.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodrigo Rocha Design - Portfólio de Design Gráfico, Produto e Identidade Visual.">
+    <title>Rodrigo Rocha Design</title>
+    
+    <!-- Fonte Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="Identidade/logo RODRIGO.jpg" alt="Rodrigo Rocha Design Logo" class="logo-img">
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                </ul>
+                <a href="#contato" class="btn btn-primary nav-cta">Falar com Rodrigo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <span class="hero-subtitle">Design Gráfico & Produto</span>
+                    <h1 class="hero-title">Um bom design é capaz de destacar a sua marca e fortalecer a relação da sua empresa com os clientes.</h1>
+                    <p class="hero-description">Transformando a memória afetiva em produtos que promovem o bem-estar nas relações humanas.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#servicos" class="btn btn-secondary">Conhecer Serviços</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Eixos de Atuação</h2>
+                    <p class="section-subtitle">Pilares de serviço que estruturam a nossa identidade.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card scroll-reveal">
+                        <div class="service-icon">✦</div>
+                        <h3>Identidade</h3>
+                        <p>Criação de logo, papelaria, uniformes e revitalização completa de marca, construindo uma presença forte no mercado.</p>
+                    </div>
+                    
+                    <div class="service-card scroll-reveal" style="transition-delay: 0.1s;">
+                        <div class="service-icon">●</div>
+                        <h3>Projeto de Produto</h3>
+                        <p>Desenvolvimento de produtos focados no bem-estar e funcionalidade, do conceito ao portfólio mobiliário corporativo e residencial.</p>
+                    </div>
+                    
+                    <div class="service-card scroll-reveal" style="transition-delay: 0.2s;">
+                        <div class="service-icon">▲</div>
+                        <h3>Design Gráfico</h3>
+                        <p>Criação de cartazes, folders, catálogos e comunicação visual para conectar a sua mensagem visualmente com seu público.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfólio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                    <p class="section-subtitle">Um olhar sobre trabalhos que unem função e emoção.</p>
+                </div>
+
+                <div class="portfolio-filters scroll-reveal">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="identidade">Identidade</button>
+                    <button class="filter-btn" data-filter="produto">Produto</button>
+                    <button class="filter-btn" data-filter="grafico">Gráfico</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Item 1 -->
+                    <div class="portfolio-item scroll-reveal" data-category="identidade">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=600&auto=format&fit=crop" alt="Projeto Identidade">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Branding Essencial</h4>
+                            <span>Identidade</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="portfolio-item scroll-reveal" data-category="produto">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=600&auto=format&fit=crop" alt="Projeto Produto">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Mobiliário Afetivo</h4>
+                            <span>Produto</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="portfolio-item scroll-reveal" data-category="grafico">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" alt="Projeto Gráfico">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Comunicação Visual</h4>
+                            <span>Gráfico</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="portfolio-item scroll-reveal" data-category="produto">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600&auto=format&fit=crop" alt="Projeto Produto 2">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Design Corporativo</h4>
+                            <span>Produto</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="portfolio-item scroll-reveal" data-category="identidade">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop" alt="Projeto Identidade 2">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Renovação de Marca</h4>
+                            <span>Identidade</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="portfolio-item scroll-reveal" data-category="grafico">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=600&auto=format&fit=crop" alt="Projeto Gráfico 2">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Editorial & Catálogos</h4>
+                            <span>Gráfico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="about">
+            <div class="container about-container">
+                <div class="about-image scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Rodrigo Rocha">
+                </div>
+                <div class="about-content scroll-reveal">
+                    <h2 class="section-title">Sobre Rodrigo Rocha</h2>
+                    <p>Designer de produtos brasileiro (Guarulhos-SP, 1982), atua no mercado desde 2011 focando na interseção entre a estética visual e o design de mobiliário corporativo e residencial.</p>
+                    <p>Com a <strong>memória afetiva como inspiração</strong>, Rodrigo transforma conceitos em produtos tangíveis e identidades visuais marcantes, promovendo sempre o bem-estar nas relações humanas e corporativas.</p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-desc">Graduação em Design de Produtos<br><small>UNESP/FAAC – Bauru</small></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2015</div>
+                            <div class="timeline-desc">MBA em Marketing<br><small>Fundação Getúlio Vargas</small></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2017</div>
+                            <div class="timeline-desc">Mestrado em Design<br><small>UNESP/FAAC – Bauru</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contato -->
+    <footer id="contato" class="footer">
+        <div class="container footer-container">
+            <div class="footer-info scroll-reveal">
+                <h3>Vamos criar algo juntos?</h3>
+                <p>Estou disponível para novos projetos e colaborações. Entre em contato para discutirmos a sua próxima grande ideia.</p>
+                <div class="contact-links">
+                    <a href="mailto:rodrigorochadsgn@gmail.com" class="contact-link">rodrigorochadsgn@gmail.com</a>
+                    <a href="https://wa.me/5514982147669" target="_blank" class="contact-link whatsapp-link">
+                        <img src="Identidade/whatsapp.svg" alt="WhatsApp" class="wa-icon"> Conversar no WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-form scroll-reveal">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Como posso te ajudar?" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Rodrigo Rocha Design. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

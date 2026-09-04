@@ -1,0 +1,12 @@
+# Arquivos brutos de câmera não utilizados em produção web (>80MB)
+*.TIF
+*.tif
+
+# Arquivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
